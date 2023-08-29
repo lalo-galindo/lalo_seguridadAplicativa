@@ -1,0 +1,1 @@
+useradd -m -p password -s /bin/zsh -c "act2" $1;
