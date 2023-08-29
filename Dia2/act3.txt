@@ -1,0 +1,1 @@
+echo $(nmap localhost | tail -n 1 |grep -Po '(?<=\().*(?=\))' | cut -d " " -f 1)
