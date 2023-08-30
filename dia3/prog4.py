@@ -8,5 +8,5 @@ def reprobaron(b):
         if i < 6: reprobados += 1
     return reprobados
 
-print (promedio(a))
-print (reprobaron(a))
+print ("El promedio es:",promedio(a))
+print ("Reprobados:",reprobaron(a))
