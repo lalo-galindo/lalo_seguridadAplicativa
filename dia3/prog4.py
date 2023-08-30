@@ -1,10 +1,29 @@
-sum = 0
-min = None
-max =None
-best =[]
-worst =[]
+def b_w(a):
+    sum = 0
+    min = None
+    max =None
+    best =[]
+    worst =[]
+    for i in a:
+        sum += a[i]
+        if (min==None and max == None):
+            min = a[i]
+            max = a[i]
+        elif(min>a[i]):
+            worst = [i]
+            min = a [i]
+        elif (max<a[i]):
+            best =[i]
+            max =a[i]
+        elif (min==a[i]):
+            worst.append(i)
+        elif (max==a[i]):
+            best.append(i)
+    print ("El promedio es:",sum/len(a))
+    print (worst, "sacó la peor calificación:",min)
+    print (best, "sacó la mejor calificación:",max)
 
-diccionario= {
+alumnos= {
     "Juan": 8,
     "Giselle": 9,
     "Damian": 5,
@@ -23,24 +42,4 @@ diccionario= {
     "Mariano": 10,
     "Alberto": 8,
 }
-
-for i in diccionario:
-    sum += diccionario[i]
-
-    if (min==None and max == None):
-        min = diccionario[i]
-        max = diccionario[i]
-    elif(min>diccionario[i]):
-        worst = [i]
-        min = diccionario [i]
-    elif (max<diccionario[i]):
-        best =[i]
-        max =diccionario[i]
-    elif (min==diccionario[i]):
-        worst.append(i)
-    elif (max==diccionario[i]):
-        best.append(i)
-
-print ("El promedio es:",sum/len(diccionario))
-print (worst, "sacó la peor calificación:",min)
-print (best, "sacó la mejor calificación:",max)
+b_w(alumnos)
