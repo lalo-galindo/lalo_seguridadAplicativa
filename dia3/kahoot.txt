@@ -3,7 +3,7 @@
 3: x
 4: bien
 5: bien 
-6: x
+6: bien
 7: x
 8: x
 9: x
