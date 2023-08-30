@@ -1,26 +1,12 @@
-def suma (a,b): return a+b
-def resta (a,b): return a-b
-def mult (a,b): return a*b
-def div (a,b): return a/b
+a =[8,9,10,6,6,7,8,9,5,6,7,6,8,8,9,9,5,6,7,9,10,7,8,9,9]
 
-def calcula (option,n1,n2):
-    if option == 1: return suma(n1,n2)
-    elif option == 2: return resta(n1,n2)
-    elif option == 3: return mult (n1,n2)
-    else: return div (n1,n2)
+def promedio(b): return sum(b)/len(b)
 
-print ("Dame la opción")
-option= int(input())
+def reprobaron(b):
+    reprobados=0
+    for i in b:
+        if i < 6: reprobados += 1
+    return reprobados
 
-print ("Dame un número")
-num1 = int (input())
-
-print ("Dame otro número")
-num2 = int (input())
-
-print ("resultado:", calcula(option,num1,num2))
-
-    
-
-
-
+print ("El promedio es:",promedio(a))
+print ("Reprobados:",reprobaron(a))
