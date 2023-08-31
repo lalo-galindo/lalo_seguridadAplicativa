@@ -1,9 +1,10 @@
 def b_w(a):
     sum = 0
-    min = None
+    min =None
     max =None
     best =[]
     worst =[]
+
     for i in a:
         sum += a[i]
         if (min==None and max == None):
